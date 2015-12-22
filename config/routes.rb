@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get '/work' => 'pages#work', as: 'work'
 
   devise_for :users
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
   root "home#index"
 end
