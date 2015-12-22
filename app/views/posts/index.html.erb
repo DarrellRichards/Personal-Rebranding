@@ -1,6 +1,16 @@
-<% @posts.each do |post| %>
-	<div class="post_main">
-		<h2><%= link_to post.title, post %></h2>
-		<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+<div class="container">
+	<div class="row">
+		<% @posts.each do |post| %>
+		<div class="col-md-4">
+			<div class="post_main">
+				<h2><%= link_to post.title, post %></h2>
+				<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+				<div class="post-content">
+					<%= truncate post.body, length: 160 %><br>
+					<button class="btn readmore"><%= link_to 'read more', post %></button>
+				</div>
+			</div>
+		</div>
+		<% end %>
 	</div>
-<% end %>
+</div>
