@@ -2,5 +2,5 @@
 <p class="date">Submitted: <%= time_ago_in_words(@post.created_at) %> Ago</p>
 
 <div class="post_content">
-	<%= @post.body %>
+	<%= simple_format(@post.body) %>
 </div>
