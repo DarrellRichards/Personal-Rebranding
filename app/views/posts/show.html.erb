@@ -1,6 +1,8 @@
 <h2><%= @post.title %></h2>
 <p class="date">Submitted: <%= time_ago_in_words(@post.created_at) %> Ago</p>
-<p><%= link_to 'Delete', post_path(@post), method: :delete %></p>
+<% if user_signed_in? %>
+	<p><%= link_to 'Delete', post_path(@post), method: :delete %></p>
+<% end %>
 
 <div class="post_content">
 	<%= simple_format(@post.body) %>

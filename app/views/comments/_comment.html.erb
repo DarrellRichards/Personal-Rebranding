@@ -3,6 +3,8 @@
       <p><%= comment.name %></p>
       <p><%= comment.body %></p>
       <p><%= time_ago_in_words(comment.created_at) %> ago.</p>
-      <%= link_to 'Delete', [comment.post, comment], method: :delete, class: "btn button"%>
+      <% if user_signed_in? %>
+        <%= link_to 'Delete', [comment.post, comment], method: :delete, class: "btn button"%>
+      <% end %>
   </div>
 </div>
