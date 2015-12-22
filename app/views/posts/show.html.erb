@@ -1,0 +1,27 @@
+<div class="container">
+	<h2><%= @post.title %></h2>
+	<p class="date">Submitted: <%= time_ago_in_words(@post.created_at) %> Ago</p>
+	<% if user_signed_in? %>
+		<p><%= link_to 'Delete', post_path(@post), method: :delete %></p>
+	<% end %>
+
+	<div class="post_content">
+		<%= simple_format(@post.body) %>
+	</div>
+
+	<%= @post.comments.count %> Comments
+
+	<%= render @post.comments %>
+
+	<% if @post.errors.any? %>
+		<h2><%= pluralize(@post.errors.count, "error")  %></h2>
+		<ul>
+			<% @post.errors.full_messages.each do |msg| %>
+				<li><%= msg %></li>
+			<% end %>
+		</ul>
+	<% end %>
+	<h3>Add A Comment</h3>
+	<%= render "comments/form" %>
+
+</div>
