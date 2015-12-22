@@ -2,5 +2,9 @@
 	<div class="post_main">
 		<h2><%= link_to post.title, post %></h2>
 		<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
+		<div class="post-content">
+			<%= truncate post.body, length: 160 %>
+			<%= link_to 'read more', post %> 
+		</div>
 	</div>
 <% end %>
