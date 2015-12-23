@@ -1,0 +1,23 @@
+body{
+	background-color: #F1F2F7;
+	padding: 0;
+	margin: 0;
+}
+.navbar-toggle .icon-bar {
+    background: #33CD99;
+}
+.navbar{
+	border: none;
+	background: #2B2E2E;
+	a{
+		color: white;
+		&:hover{
+			color:#33CD99;
+		}
+	}
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	text-decoration: none;
+    background-color: transparent;
+    color: #33CD99;
+}
