@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
 		<% @posts.each do |post| %>
-		<div class="col-md-4">
+		<div class="col-md-6">
 			<div class="post_main">
 				<h2><%= link_to post.title, post %></h2>
 				<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>

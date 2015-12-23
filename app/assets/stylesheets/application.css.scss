@@ -15,8 +15,18 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "header";
 
-
-body{
-	background-color: #F1F2F7;
+.headline{
+	background: #FFFFFF;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-transform: uppercase;
+	color: #a8aab3;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	letter-spacing: 3.5px;
+	box-shadow: 0 .1px .1px #E6E7EB;
+	margin-top: 0px;
 }
