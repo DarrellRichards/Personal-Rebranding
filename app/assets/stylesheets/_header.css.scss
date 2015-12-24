@@ -8,8 +8,14 @@ body{
     background: #33CD99;
 }
 .navbar{
+	text-align: center;
 	border: none;
 	background: $white;
+	li{
+	  float: none;
+      display: inline-block;
+      margin: 0 auto;
+	}
 	a{
 		color: $black;
 		text-align: center; 
@@ -22,6 +28,7 @@ body{
 	text-decoration: none;
     background-color: transparent;
     color: #33CD99;
+
 }
 
 #intro_wrapper{
@@ -36,6 +43,11 @@ body{
 		padding: 20px;
 		border-radius: 50%;
 		color: $white;
+		&:hover{
+			border: 1px solid #33CD99;
+			//background: #33CD99;
+			color: #33CD99;
+		}
 	}
 	p{
 		font-size: 3rem;
