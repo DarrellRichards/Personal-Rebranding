@@ -22,3 +22,15 @@ body{
     background-color: transparent;
     color: #33CD99;
 }
+
+#intro_wrapper{
+	max-width: 50%; 
+	margin: 0 auto;
+	h1,h3{
+		text-align: center;
+		text-transform: uppercase;
+	}
+	h3{
+		padding-bottom: 15px;
+	}
+}
