@@ -2,6 +2,7 @@ body{
 	background-color: #F1F2F7;
 	padding: 0;
 	margin: 0;
+	font-family: 'open-sans';
 }
 .navbar-toggle .icon-bar {
     background: #33CD99;
@@ -21,4 +22,32 @@ body{
 	text-decoration: none;
     background-color: transparent;
     color: #33CD99;
+}
+
+#intro_wrapper{
+	max-width: 50%; 
+	margin: 25% auto;
+	font-weight: 100;
+	font-family: 'raleway';
+	text-align: center;
+	color: $white;
+	.intro_button{
+		border:1px solid $white;
+		padding: 20px;
+		border-radius: 50%;
+		color: $white;
+	}
+	p{
+		font-size: 3rem;
+		letter-spacing: .5rem;
+		margin-bottom: 20%;
+	}
+	h1,h3{
+		text-transform: uppercase;
+		font-weight:100;
+	}
+	h3{
+		padding-bottom: 15px;
+		font-weight: 100;
+	}
 }
