@@ -26,11 +26,16 @@ body{
 #intro_wrapper{
 	max-width: 50%; 
 	margin: 0 auto;
+	font-weight: 100;
+	font-family: 'raleway';
+	color: $white;
 	h1,h3{
 		text-align: center;
 		text-transform: uppercase;
+		font-weight:100;
 	}
 	h3{
 		padding-bottom: 15px;
+		font-weight: 100;
 	}
 }
