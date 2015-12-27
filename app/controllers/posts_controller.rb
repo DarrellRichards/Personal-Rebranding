@@ -15,13 +15,13 @@ class PostsController < ApplicationController
 		end
 	end
 	def show
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 	end
 	def edit
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 	end
 	def update
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 		if @post.update(params[:post].permit(:title, :body))
 			redirect_to @post
 		else
@@ -29,7 +29,7 @@ class PostsController < ApplicationController
 		end
 	end
 	def destroy
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 		@post.destroy
 
 		redirect_to root_path
@@ -37,6 +37,6 @@ class PostsController < ApplicationController
 
 	private
 		def post_params
-			params.require(:post).permit(:title, :body)
+			params.require(:post).permit(:title, :body, :slug)
 		end
 end
