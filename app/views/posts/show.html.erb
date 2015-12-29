@@ -8,23 +8,24 @@
 		<% if user_signed_in? %>
 			<p id="links">
 				<%= link_to 'Delete', post_path(@post), method: :delete, class: "delete" %>
-				<%= link_to 'Edit', post_path(@post), class: "edit" %>
-			</p>		
+				<%= link_to 'Edit', edit_post_path(@post), class: "edit" %>
+			</p>
 		<% end %>
+		<div id="commentform">
+			<%= @post.comments.count %> Comments
 
-		<%= @post.comments.count %> Comments
+			<%= render @post.comments %>
 
-		<%= render @post.comments %>
-
-		<% if @post.errors.any? %>
-			<h2><%= pluralize(@post.errors.count, "error")  %></h2>
-			<ul>
-				<% @post.errors.full_messages.each do |msg| %>
-					<li><%= msg %></li>
-				<% end %>
-			</ul>
-		<% end %>
-		<h3>Add A Comment</h3>
-		<%= render "comments/form" %>
+			<% if @post.errors.any? %>
+				<h2><%= pluralize(@post.errors.count, "error")  %></h2>
+				<ul>
+					<% @post.errors.full_messages.each do |msg| %>
+						<li><%= msg %></li>
+					<% end %>
+				</ul>
+			<% end %>
+			<h3>Add A Comment</h3>
+			<%= render "comments/form" %>
+		</div>
 	</div>
 </div>

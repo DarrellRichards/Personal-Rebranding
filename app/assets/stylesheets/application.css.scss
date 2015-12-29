@@ -43,12 +43,18 @@ footer{
     margin-bottom: 30px;
 }
 
+#commentform{
+	text-align: center;
+	margin-top: 5%;
+}
+
 
 
 /* Comment From CSS */
 
 label {
     display: block;
+		text-align: left;
     font-weight: 300;
     font-family: $raleway;
 }
@@ -56,6 +62,11 @@ label {
 #commentform input, textarea{
 	font-family: $raleway;
     color: #ababab;
+		width:100%;
+}
+
+#commentform textarea{
+	height: 200px;
 }
 
 #commentform input#submit {
