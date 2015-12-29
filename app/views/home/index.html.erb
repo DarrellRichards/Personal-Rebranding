@@ -1,17 +1,17 @@
 <div id="intro_content">
   <div class="container">
   	<div id="intro_wrapper">
-  		<h1>I'm Darrell Richards</h1>
-  		<h3>Web Designer + Developer</h3>
-  		<hr><hr>
-  		<p>Awesome Web Experiences</p>
-  		<a href="#portfolio" class="intro_button"><i class="fa fa-arrow-down fa-1x"></i></a>
+  		<!-- <h1>Hello There</h1> -->
+  		<h1>My name is Darrell Richards Jr</h1>
+  		<hr>
+  		<p>I'm a Web Developer located in Roanoke,Virginia</p>
+  		<a href="#nav" class="intro_button"><i class="fa fa-arrow-down fa-1x"></i></a>
   	</div>
   </div>
 </div>
 
 
-<nav class="navbar">
+<nav class="navbar" id="nav">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -21,7 +21,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "Darrell Richards", root_path, class: "navbar-brand" %>
+      <a class="navbar-brand" href="#">Darrell Richards</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,26 +29,19 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/about">About</a></li>
         <li><a href="/work">Work</a></li>
-        <li><a href="/posts">Blog</a></li>
+        <li><a href="/blog">Blog</a></li>
         <li><a href="/contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar -->
   </div><!-- /.container-fluid -->
 </nav>
 
+
 <div class="portfolio" id="portfolio">
 	<h2 class="headline">Portfolio</h2>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<p>Work Number 1</p>
-			</div>
-			<div class="col-md-4">
-				<p>Work Number 2</p>
-			</div>
-			<div class="col-md-4">
-				<p>Work Number 3</p>
-			</div>
+			<p class="text-center">Unfortunately at this time. I do not have work to show for because of contract with companies.</p>
 		</div>
 	</div>
 </div>
@@ -58,15 +51,18 @@
 		<div class="row">
 			<% @posts.each do |post| %>
 				<div class="col-md-6">
-					<div class="post_main">
-						<h2><%= link_to post.title, post %></h2>
-						<p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
-						<div class="post-content">
+					<div class="post">
+						<%=  link_to post.title, post %>
+						<p class="home_date">
+							<i class="fa fa-calendar"></i>  <%= post.created_at.strftime("%B, %d, %Y") %>
+							<i class="fa fa-user"></i> Darrell Richards Jr
+						</p>
+						<p class="home-content">
 							<%= truncate post.body, length: 160 %><br>
-							<%= link_to 'read more', post, class: "btn readmore" %>
-						</div>
-					</div>
-				</div>
+							<%= link_to 'read more', post, class: "readmore" %>
+						</p>
+					</div> <!-- end post -->
+				</div> <!-- end col-md-6 -->
 			<% end %>
 		</div>
 	</div>
@@ -75,18 +71,27 @@
 	<h2 class="headline">Services</h2>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-4">
-				<p>Service Name</p>
-			</div>
-			<div class="col-md-4">
-				<p>Service Name</p>
-			</div>
-			<div class="col-md-4">
-				<p>Service Name</p>
+			<div class="col-md-12">
+				<p>Coming Soon!</p>
 			</div>
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <footer>
 	This is a footer
