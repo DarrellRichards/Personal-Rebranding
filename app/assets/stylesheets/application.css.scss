@@ -119,6 +119,54 @@ label {
 	font-size: 11px;
 }
 
+.project{
+	display: inline-block;
+  height: 300px;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 300px;
+	img{
+		border: 6px solid $white;
+	}
+}
+
+span.text-content {
+  background: rgba(61, 173, 151,0.8);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(61, 173, 151,0.8);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 300px;
+  left: 0;
+  position: absolute;
+  top: 0;
+	font-size: 1.4em;
+  width: 300px;
+  opacity: 0;
+}
+
+.project:hover span.text-content {
+  opacity: 1;
+}
+
+
 @import 'homepage';
 @import 'posts';
 @import 'media';

@@ -47,7 +47,42 @@
 	<h2 class="headline">Portfolio</h2>
 	<div class="container">
 		<div class="row">
-			<p class="text-center">Unfortunately at this time. I do not have work to show for because of contract with companies.</p>
+			<div class="col-md-4">
+			  <div class="project">
+          <img src="http://media.brownsteingroup.com/images/backgrounds/portfolioBG.jpg" height="300" width="300"/>
+          <span class="text-content"><span>Personal Site</span></span>
+			  </div>
+			</div>
+      <div class="col-md-4">
+			  <div class="project">
+          <img src="http://media.brownsteingroup.com/images/backgrounds/portfolioBG.jpg" height="300" width="300"/>
+          <span class="text-content"><span>Another Site</span></span>
+			  </div>
+			</div>
+      <div class="col-md-4">
+			  <div class="project">
+          <img src="http://media.brownsteingroup.com/images/backgrounds/portfolioBG.jpg" height="300" width="300"/>
+          <span class="text-content"><span>Travel Show</span></span>
+			  </div>
+			</div>
+      <div class="col-md-4">
+			  <div class="project">
+          <img src="http://media.brownsteingroup.com/images/backgrounds/portfolioBG.jpg" height="300" width="300"/>
+          <span class="text-content"><span>That Landscaping</span></span>
+			  </div>
+			</div>
+      <div class="col-md-4">
+			  <div class="project">
+          <img src="http://media.brownsteingroup.com/images/backgrounds/portfolioBG.jpg" height="300" width="300"/>
+          <span class="text-content"><span>Why so serious?</span></span>
+			  </div>
+			</div>
+      <div class="col-md-4">
+			  <div class="project">
+          <img src="http://media.brownsteingroup.com/images/backgrounds/portfolioBG.jpg" height="300" width="300"/>
+          <span class="text-content"><span>This is a Awesome Company</span></span>
+			  </div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -59,10 +94,11 @@
 				<div class="col-md-6">
 					<div class="post">
 						<h2><%=  link_to post.title, post, class: "post_link" %></h2>
-						<p class="home_date">
-							<i class="fa fa-calendar"></i>  <%= post.created_at.strftime("%B, %d, %Y") %>
+            <div class="home_date">
+              <i class="fa fa-calendar"></i> <%= post.created_at.strftime("%B, %d, %Y")   %>
 							<i class="fa fa-user"></i> Darrell Richards Jr
-						</p>
+            </div>
+
 						<p class="home-content">
 							<%= truncate post.body, length: 160 %><br>
 							<%= link_to 'read more', post, class: "readmore" %>
