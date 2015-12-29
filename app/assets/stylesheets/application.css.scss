@@ -1,5 +1,7 @@
 $white: #ffffff;
 $black: #000000;
+$open: "Open Sans", sans-serif;
+$raleway: "Raleway", sans-serif;
 
 
 @import "bootstrap-sprockets";
@@ -7,7 +9,6 @@ $black: #000000;
 @import "header";
 
 .headline{
-	// background: $white;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -18,7 +19,6 @@ $black: #000000;
 	letter-spacing: 3.5px;
 	box-shadow: 0 .1px .1px #E6E7EB;
 	margin-top: 0px;
-
 }
 
 #intro_content{
@@ -35,4 +35,79 @@ footer{
 	margin-top: 2rem;
 }
 
+/* comments section */
+
+#comments {
+    color: #32323a;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+
+/* Comment From CSS */
+
+label {
+    display: block;
+    font-weight: 300;
+    font-family: $raleway;
+}
+
+#commentform input, textarea{
+	font-family: $raleway;
+    color: #ababab;
+}
+
+#commentform input#submit {
+    background: #1fb5ac;
+    border: none;
+    color: white;
+    padding: 13px;
+    border-radius: 12px;
+}
+
+/* Sidebar Styles */
+
+.sidebar{
+    padding: 15px;
+    background: white;
+}
+
+.sidebar h3{
+	font-weight: 300;
+	opacity: .9;
+	font-size: 20px;
+	border-bottom: 2px solid #cccccc;
+	padding-bottom: 6px;
+	width: 70%;
+}
+.sidebar h4{
+	font-weight: 400;
+	opacity: .7;
+	font-size: 15px;
+}
+
+.sidebar ul li{
+	list-style-type: none;
+	text-align: left;
+	padding-left: 0;
+	font-size: 15px;
+	margin-left: -40px;
+}
+
+.sidebar a{
+	color: #2B2E2E;
+}
+.sidebar a:hover{
+	text-decoration: none;
+	color: #33CD99;
+}
+
+.sidebar .post-date{
+	opacity: .4;
+	font-size: 11px;
+}
+
 @import 'homepage';
+@import 'posts';
+@import 'media';

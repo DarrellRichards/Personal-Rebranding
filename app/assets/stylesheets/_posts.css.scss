@@ -1,0 +1,24 @@
+.single_post{
+	.post_link{
+		text-align: center;
+		color: #6E6D72;
+	}
+	#links{
+		margin-bottom: 10px;
+		.delete{
+			background: red;
+			padding: 5px;
+			font-size: .9em;
+			color: $white;
+			border-radius: 10%;
+		}
+		.edit{
+			background: lightblue;
+			padding: 5px;
+			font-size: .9em;
+			color: $white;
+			border-radius: 10%;
+		}
+	}
+	
+}

@@ -1,0 +1,21 @@
+@media (max-width: 768px){
+	#intro_wrapper{
+		max-width: 100%;
+		margin: 40% auto;
+		h1{
+			font-size: 2rem;
+			letter-spacing: 0;
+		}
+		h3{
+			font-size: 1.5rem;
+			letter-spacing: 0;
+		}
+		p{
+			font-size: 1.3rem;
+			letter-spacing: 0;
+		}
+	}
+	.sidebar{
+		margin: 15px 0;
+	}
+}

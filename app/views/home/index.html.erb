@@ -52,7 +52,7 @@
 			<% @posts.each do |post| %>
 				<div class="col-md-6">
 					<div class="post">
-						<%=  link_to post.title, post %>
+						<h2><%=  link_to post.title, post, class: "post_link" %></h2>
 						<p class="home_date">
 							<i class="fa fa-calendar"></i>  <%= post.created_at.strftime("%B, %d, %Y") %>
 							<i class="fa fa-user"></i> Darrell Richards Jr
