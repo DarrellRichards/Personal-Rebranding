@@ -20,5 +20,35 @@
 			border-radius: 10%;
 		}
 	}
-	
+}
+
+.list_posts{
+	h2{
+		text-align: center;
+	}
+	.headline{
+		border-bottom: 1px solid lighten($black, 85%);
+	}
+	.post-content{
+		text-align: center;
+		width: 75%;
+		margin: 0 auto;
+	}
+	.readmore{
+		color: #20B5B3;
+		&:hover{
+			text-decoration: none;
+			color: #e74c3c;
+		}
+	}
+	.post_link{
+		color: #6E6D72;
+			&:hover{
+				text-decoration: none;
+				color: #33CD99;
+			}
+	}
+	.post_main{
+		padding: 2rem;
+	}
 }
