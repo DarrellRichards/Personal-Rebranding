@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'friendly_id'
 gem "paperclip", "~> 4.3"
+gem 'rack-cors', :require => 'rack/cors'
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'byebug'

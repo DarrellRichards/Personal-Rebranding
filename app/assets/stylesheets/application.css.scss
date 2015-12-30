@@ -121,12 +121,12 @@ label {
 
 .project{
 	display: inline-block;
-  height: 300px;
   margin: 0 1em 1em 0;
   position: relative;
-  width: 300px;
 	img{
 		border: 6px solid $white;
+		width: 100%;
+		height: 300px;
 	}
 }
 
@@ -135,11 +135,11 @@ span.text-content {
   color: white;
   cursor: pointer;
   display: table;
-  height: 300px;
   left: 0;
+  width: 100%;
+  height: 300px;
   position: absolute;
   top: 0;
-  width: 300px;
 }
 
 span.text-content span {
@@ -153,12 +153,12 @@ span.text-content {
   color: white;
   cursor: pointer;
   display: table;
-  height: 300px;
   left: 0;
+  height: 300px;
+  width: 100%;
   position: absolute;
   top: 0;
 	font-size: 1.4em;
-  width: 300px;
   opacity: 0;
 }
 
