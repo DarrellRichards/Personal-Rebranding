@@ -1,0 +1,14 @@
+<h2 class="headline">Work</h2>
+
+<div class="container">
+	<div class="row">
+		<% @projects.each do |project| %>
+			<div class="col-md-4">
+			  <div class="project">
+			  	<%= image_tag project.featured_image.url(:medium) %>
+			  	<span class="text-content"><span><%= project.title %></span></span>
+			  </div>
+			</div>
+		<% end %>
+	</div>
+</div>

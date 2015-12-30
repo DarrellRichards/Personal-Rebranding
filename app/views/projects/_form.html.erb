@@ -1,0 +1,11 @@
+<%= form_for :project, url: projects_path do |f| %>
+	<%= f.label :featured_image %>
+	<%= f.file_field :featured_image %>
+	<%= f.label :title %><br>
+	<%= f.text_field :title %><br>
+	<%= f.label :url %><br>
+	<%= f.text_field :url %><br>
+	<%= f.label :information %><br>
+	<%= f.text_area :information %><br>
+	<%= f.submit %>
+<% end %>
