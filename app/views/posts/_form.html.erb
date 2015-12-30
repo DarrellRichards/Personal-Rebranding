@@ -1,4 +1,6 @@
 <%= form_for :post, url: posts_path do |f| %>
+	<%= f.label :thumbnail %>
+	<%= f.file_field :thumbnail %>
 	<%= f.label :title %><br>
 	<%= f.text_field :title %><br>
 	<%= f.label :body %><br>

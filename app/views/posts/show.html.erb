@@ -1,5 +1,6 @@
 <div class="single_post">
 	<div class="container">
+		<%= image_tag @post.thumbnail.url(:medium) %>
 		<h2 class="post_link"><%= @post.title %></h2>
 		<p class="date">Submitted: <%= time_ago_in_words(@post.created_at) %> Ago</p>
 		<div class="post_content">
