@@ -16,3 +16,8 @@
 //= require turbolinks
 //= require_tree .
 
+$(document).ready(function() {
+	$('#right_side_menu').click(function(){
+    	$('#sidemenu').toggleClass('visiable');
+ 	});
+});
