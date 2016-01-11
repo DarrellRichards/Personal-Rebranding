@@ -4,33 +4,6 @@ body{
 	margin: 0;
 	font-family: 'open-sans';
 }
-.navbar-toggle .icon-bar {
-    background: #33CD99;
-}
-.navbar{
-	text-align: center;
-	border: none;
-	background: $white;
-	li{
-	  float: none;
-      display: inline-block;
-      margin: 0 auto;
-	}
-	a{
-		color: $black;
-		text-align: center;
-		&:hover{
-			color:#33CD99;
-		}
-	}
-}
-.nav>li>a:focus, .nav>li>a:hover{
-	text-decoration: none;
-    background-color: transparent;
-    color: #33CD99;
-
-}
-
 #intro_wrapper{
 	max-width: 50%;
 	margin: 25% auto;
@@ -66,3 +39,40 @@ body{
 		font-weight: 100;
 	}
 }
+
+
+
+#intro_content{
+	background-image: url("../images/intro_bg.jpg");
+	background-size: cover;
+	height: 733px;
+}
+
+/* Boring Bootstrap CSS overwrites */
+.navbar-default {
+    background-color: rgba(43,119,105,0.4);
+    border-color: transparent;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    min-height: 30px;
+   
+    a{
+    	color: $white!important;
+    }
+    .navbar-brand{
+		font-family: $raleway;
+		font-weight: 300;
+		opacity: .6;
+		letter-spacing: .2em;
+    }
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+}
+
+.current-menu-item {
+    border-bottom: 1px solid white;
+}
+

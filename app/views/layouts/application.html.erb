@@ -17,9 +17,7 @@
   <p class="notice"><%= notice %></p>
 <% end %>
 
-<% unless current_page?(root_path) %>
-  <%= render 'layouts/header'; %>
-<% end %>
+<%= render 'layouts/header'; %>
 
 <%= yield %>
 
